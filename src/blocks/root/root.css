@@ -1,0 +1,10 @@
+@import url(../header/header.css);
+
+.root {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 576px;
+  background-image: url('../../images/background_image.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
