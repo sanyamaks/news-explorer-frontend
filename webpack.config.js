@@ -29,7 +29,14 @@ module.exports = {
         options: {
           name: './images/[name].[ext]',
         },
-      }
+      },
+      {
+        test: /\.(woff)$/,
+        loader: 'file-loader',
+        options: {
+          name: './fonts/[name].[ext]',
+        },
+      },
     ],
   },
   plugins: [
