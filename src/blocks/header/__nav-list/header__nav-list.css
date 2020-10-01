@@ -1,0 +1,22 @@
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  height: 74px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav-list {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav-list {
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+  }
+}

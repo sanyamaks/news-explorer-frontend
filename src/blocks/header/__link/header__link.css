@@ -1,0 +1,28 @@
+.header__link {
+  display: flex;
+  align-items: center;
+  margin: 0 32px 0 0;
+  height: 100%;
+  color: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header__link {
+    margin: 0 16px 0 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__link {
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+}

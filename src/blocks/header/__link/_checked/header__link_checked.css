@@ -1,0 +1,12 @@
+.header__link_checked {
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+}
+
+@media screen and (max-width: 650px) {
+  .header__link_checked {
+    border: none;
+  }
+}

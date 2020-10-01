@@ -1,0 +1,19 @@
+.header__nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav-wrapper {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 72px 5% 24px 5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: #1A1B22;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,16 @@
+.header__nav-btn-active {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  outline: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: inherit;
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav-btn-active {
+    display: block;
+  }
+}
