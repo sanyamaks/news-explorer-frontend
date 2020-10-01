@@ -1,0 +1,14 @@
+.button_blue {
+  height: 64px;
+  color: #FFF;
+  background-color: #2F71E5;
+  border: none;
+}
+
+.button_blue:hover {
+  background-color: #347EFF;
+}
+
+.button_blue:active {
+  background-color: #2A65CC;
+}
