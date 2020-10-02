@@ -1,0 +1,32 @@
+.search__input {
+  height: 64px;
+  width: 100%;
+  padding: 0 176px 0 24px;
+  background-color: #FFF;
+  color: #1A1B22;
+  border: 1px solid #D1D2D6;
+  outline: none;
+  cursor: text;
+  border-radius: 100px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.search__input::placeholder {
+  color: #B6BCBF;
+}
+
+@media screen and (max-width: 768px) {
+  .search__input {
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .search__input {
+    padding: 0 16px;
+  }
+}

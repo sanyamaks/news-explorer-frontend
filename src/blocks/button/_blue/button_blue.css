@@ -12,3 +12,10 @@
 .button_blue:active {
   background-color: #2A65CC;
 }
+
+
+@media screen and (max-width: 768px) {
+  .button_blue {
+    height: 56px;
+  }
+}

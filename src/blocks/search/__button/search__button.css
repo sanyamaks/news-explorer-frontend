@@ -1,0 +1,23 @@
+.search__button {
+  position: relative;
+  top: -64px;
+  left: calc(100% - 168px);
+  width: 168px;
+}
+
+@media screen and (max-width: 768px) {
+  .search__button {
+    position: relative;
+    top: -56px;
+    left: calc(100% - 160px);
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .search__button {
+    position: static;
+    margin: 16px 0 0 0;
+    width: 100%;
+  }
+}
