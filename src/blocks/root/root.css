@@ -5,6 +5,7 @@
 @import url(../header/header.css);
 @import url(../main/main.css);
 @import url(../search/search.css);
+@import url(../about-author/about-author.css);
 
 .root {
   display: flex;

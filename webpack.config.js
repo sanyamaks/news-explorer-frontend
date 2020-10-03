@@ -24,11 +24,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpeg|jpg|gif)$/,
-        loader: 'file-loader',
-        options: {
-          name: './images/[name].[ext]',
-        },
+        test: /\.(png|jpeg|jpg|gif|ico|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './images/[name].[ext]',
+              esModule: false,
+            },
+          },
+          { loader: 'image-webpack-loader', options: {} },
+        ],
       },
       {
         test: /\.(woff)$/,

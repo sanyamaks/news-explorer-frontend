@@ -52,22 +52,43 @@
           type="text"
           placeholder="Введите тему новости"
         />
-        <button class="button button_blue search__button" type="button">Искать</button>
+        <button class="button button_blue search__button" type="button">
+          Искать
+        </button>
       </form>
     </section>
 
     <section class="about-author">
-      <h2 class="about-author__title">Об авторе</h2>
-      <div class="about-author__description">
-        <p class="about-author__description-text">
-          Это блок с описанием автора проекта. Здесь следует указать, как
-          вас зовут, чем вы занимаетесь, какими технологиями разработки
-          владеете.
-        </p>
-        <p class="about-author__description-text">
-          Также можно рассказать о процессе обучения в Практикуме, чему вы
-          тут научились, и чем можете помочь потенциальным заказчикам.
-        </p>
+      <picture>
+        <source
+          class="about-author__avatar"
+          srcset="<%=require('./images/avatar(320px).png')%>"
+          media="(max-width: 320px)"
+        />
+        <source
+          class="about-author__avatar"
+          srcset="<%=require('./images/avatar(768px).png')%>"
+          media="(max-width: 768px)"
+        />
+        <img
+          class="about-author__avatar"
+          src="<%=require('./images/avatar(1440px).png')%>"
+          alt=""
+        />
+      </picture>
+      <div class="about-author__info">
+        <h2 class="about-author__title">Об авторе</h2>
+        <div class="about-author__description">
+          <p class="about-author__description-text">
+            Это блок с описанием автора проекта. Здесь следует указать, как
+            вас зовут, чем вы занимаетесь, какими технологиями разработки
+            владеете.
+          </p>
+          <p class="about-author__description-text">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы
+            тут научились, и чем можете помочь потенциальным заказчикам.
+          </p>
+        </div>
       </div>
     </section>
   </main>
