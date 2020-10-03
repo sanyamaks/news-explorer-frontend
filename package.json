@@ -2,10 +2,11 @@
   "name": "news-explorer-frontend",
   "version": "0.0.1",
   "description": "Thesis Yandex.Praktikum",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/sanyamaks/news-explorer-frontend/issues"
   },
-  "homepage": "https://github.com/sanyamaks/news-explorer-frontend#readme",
+  "homepage": "https://sanyamaks.github.io/news-explorer-frontend/",
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "clean-webpack-plugin": "^3.0.0",
@@ -24,8 +25,9 @@
     "css-loader": "^4.3.0",
     "cssnano": "^4.1.10",
     "file-loader": "^6.1.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.0",
-    "image-webpack-loader": "^7.0.1",
+    "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.11.2",
     "postcss": "^8.1.1",
     "postcss-loader": "^4.0.2",
