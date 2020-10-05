@@ -1,0 +1,12 @@
+.article__icon_save-icon {
+  background-image: url('../../../../images/save-icon.svg');
+}
+
+.article__icon_save-icon:hover {
+  background-image: url('../../../../images/save-icon-hover.svg');
+}
+
+.article__icon_save-icon:active {
+  background-image: url('../../../../images/save-icon-active.svg');
+}
+

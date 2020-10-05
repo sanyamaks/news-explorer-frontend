@@ -1,0 +1,29 @@
+.article__title {
+  flex: 0 0 auto;
+  margin: 12px 0 0 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .article__title {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article__title {
+    margin: 10px 0 0 0;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    -webkit-line-clamp: 2;
+  }
+}

@@ -1,0 +1,19 @@
+.article__background {
+  height: 272px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .article__background {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article__background {
+    height: 196px;
+  }
+}

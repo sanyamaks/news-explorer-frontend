@@ -1,0 +1,32 @@
+.article__category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  left: 24px;
+  height: 40px;
+  padding: 0 12px;
+  margin: 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .article__category {
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article__category {
+    top: 16px;
+    left: 16px;
+  }
+}

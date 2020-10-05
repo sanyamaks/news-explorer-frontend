@@ -1,0 +1,37 @@
+@import url(./__category/article__category.css);
+@import url(./__tooltip/article__tooltip.css);
+@import url(./__icon/article__icon.css);
+@import url(./__icon/_delete-icon/article__icon_delete-icon.css);
+@import url(./__icon/_save-icon/article__icon_save-icon.css);
+@import url(./__icon/_save-icon/_active/article__icon_save-icon_active.css);
+@import url(./__tooltip/_active/article__tooltip_active.css);
+@import url(./__tooltip/_save/article__tooltip_save.css);
+@import url(./__tooltip/_delete/article__tooltip_delete.css);
+@import url(./__background/article__background.css);
+@import url(./__info/article__info.css);
+@import url(./__date/article__date.css);
+@import url(./__title/article__title.css);
+@import url(./__description/article__description.css);
+@import url(./__source/article__source.css);
+
+.article {
+  position: relative;
+  height: 576px;
+  width: 400px;
+  background-color: #FFF;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    height: 420px;
+    width: 224px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article {
+    height: 440px;
+    width: 288px;
+  }
+}

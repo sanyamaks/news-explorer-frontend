@@ -1,0 +1,19 @@
+.article__tooltip {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  right: 69px;
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 22px rgba(59, 74, 116, 0.1);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+

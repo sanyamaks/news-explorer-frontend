@@ -6,6 +6,7 @@
 @import url(../main/main.css);
 @import url(../search/search.css);
 @import url(../about-author/about-author.css);
+@import url(../article/article.css);
 
 .root {
   display: flex;
