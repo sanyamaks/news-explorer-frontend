@@ -5,3 +5,7 @@
   border-radius: 80px;
   border: none;
 }
+
+.button_white:hover {
+  background-color: #E9E9E9;
+}

@@ -1,0 +1,18 @@
+.results__button {
+  margin: 64px 0 0 0;
+  width: 288px;
+}
+
+@media screen and (max-width: 1024px) {
+  .results__button {
+    margin: 32px 0 0 0;
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .results__button {
+    margin: 16px 0 0 0;
+    width: 100%;
+  }
+}

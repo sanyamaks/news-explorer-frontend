@@ -15,7 +15,7 @@
   border-radius: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .article__icon:hover + .article__tooltip_active {
     display: none;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .article__icon:hover + .article__tooltip_active {
     display: none;
   }

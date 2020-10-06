@@ -17,14 +17,14 @@
   line-height: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .article__category {
     top: 8px;
     left: 8px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .article__category {
     top: 16px;
     left: 16px;

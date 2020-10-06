@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .article__info {
     height: 270px;
     padding: 16px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .article__info {
     height: 244px;
   }

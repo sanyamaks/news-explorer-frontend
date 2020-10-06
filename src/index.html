@@ -58,7 +58,10 @@
       </form>
     </section>
 
-        <article class="article">
+    <section class="results">
+      <h2 class="results__title">Результаты поиска</h2>
+      <div class="articles results__articles">
+        <article class="article articles__article">
           <!--          <p class="article__category">Природа</p>-->
           <!--          <div class="article__icon article__icon_delete-icon"></div>-->
           <!--          <p class="article__tooltip article__tooltip_delete article__tooltip_active">-->
@@ -88,7 +91,15 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article articles__article">
+          <div
+            class="article__icon article__icon_save-icon article__icon_save-icon_active"
+          ></div>
+          <p
+            class="article__tooltip article__tooltip_save article__tooltip_active"
+          >
+            Войдите, чтобы сохранять статьи
+          </p>
           <div
             class="article__background"
             style="background-image: url('./src/images/test/image_04.png')"
@@ -107,7 +118,13 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article articles__article">
+          <div class="article__icon article__icon_save-icon"></div>
+          <p
+            class="article__tooltip article__tooltip_save article__tooltip_active"
+          >
+            Войдите, чтобы сохранять статьи
+          </p>
           <div
             class="article__background"
             style="background-image: url('./src/images/test/image_07.png')"
@@ -127,7 +144,11 @@
             <p class="article__source">Риа</p>
           </div>
         </article>
-
+      </div>
+      <button class="button button_white results__button">
+        Показать ещё
+      </button>
+    </section>
 
     <section class="about-author">
       <picture>

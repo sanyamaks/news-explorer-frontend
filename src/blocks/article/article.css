@@ -20,16 +20,17 @@
   width: 400px;
   background-color: #FFF;
   border-radius: 16px;
+  /*box-shadow: 0 9px 9px -5px rgba(8, 29, 45, 0.1);;*/
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .article {
     height: 420px;
     width: 224px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .article {
     height: 440px;
     width: 288px;

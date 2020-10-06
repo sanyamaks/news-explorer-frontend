@@ -6,13 +6,13 @@
   border-radius: 16px 16px 0 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .article__background {
     height: 150px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .article__background {
     height: 196px;
   }

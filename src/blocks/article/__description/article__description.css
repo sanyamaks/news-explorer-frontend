@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .article__description {
     margin: 10px 0 0 0;
     -webkit-line-clamp: 4;

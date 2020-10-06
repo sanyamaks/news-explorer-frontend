@@ -1,0 +1,38 @@
+.articles {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+
+}
+
+.articles__article {
+
+}
+
+@media screen and (max-width: 1024px) {
+  .articles {
+    grid-template-columns: repeat(auto-fill, 224px);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+
+  }
+
+  .articles__article {
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articles__article:not(:first-child) {
+    margin: 10px 0 0 0;
+  }
+}
