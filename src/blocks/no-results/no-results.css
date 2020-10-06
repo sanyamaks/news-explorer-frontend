@@ -1,0 +1,34 @@
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 374px;
+  background-color: #F5F6F7;
+}
+
+.no-results__icon-not-found {
+  height: 96px;
+  width: 96px;
+}
+
+.no-results__title {
+  margin: 24px 0 0 0;
+  color: #1A1B22;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+  text-align: center;
+}
+
+.no-results__subtitle {
+  max-width: 356px;
+  margin: 16px 0 0 0;
+  color: #B6BCBF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
