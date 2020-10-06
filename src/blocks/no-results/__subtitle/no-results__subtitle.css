@@ -1,0 +1,10 @@
+.no-results__subtitle {
+  max-width: 356px;
+  margin: 16px 0 0 0;
+  color: #B6BCBF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
