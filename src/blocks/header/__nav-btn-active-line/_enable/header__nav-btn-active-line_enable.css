@@ -29,9 +29,9 @@
 }
 
 .header__nav-btn-active-line_enable:nth-child(1) {
-  animation: rotating_right ease .5s forwards;
+  animation: rotating_right linear .5s forwards;
 }
 
 .header__nav-btn-active-line_enable:nth-child(2) {
-  animation: rotating_left ease .5s forwards;
+  animation: rotating_left linear .5s forwards;
 }

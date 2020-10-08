@@ -3,9 +3,7 @@
   height: 24px;
   width: 24px;
   outline: none;
-  border-width: 0;
-  border-style: solid;
-  border-color: inherit;
+  cursor: pointer;
   display: none;
 }
 

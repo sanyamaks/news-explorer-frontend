@@ -7,7 +7,10 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    main: './src/pages/main/index.js',
+    articles: './src/pages/articles/index.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
@@ -33,7 +36,10 @@ module.exports = {
               esModule: false,
             },
           },
-          { loader: 'image-webpack-loader', options: {} },
+          {
+            loader: 'image-webpack-loader',
+            options: {},
+          },
         ],
       },
       {
@@ -50,8 +56,17 @@ module.exports = {
       // Подгружает HTML
       inject: false,
       hash: true,
-      template: './src/index.html',
+      template: './src/pages/main/index.html',
       filename: 'index.html',
+      chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      // Подгружает HTML
+      inject: false,
+      hash: true,
+      template: './src/pages/articles/index.html',
+      filename: 'articles.html',
+      chunks: ['articles'],
     }),
     new MiniCssExtractPlugin({
       // Излекает css в отдельный файлы

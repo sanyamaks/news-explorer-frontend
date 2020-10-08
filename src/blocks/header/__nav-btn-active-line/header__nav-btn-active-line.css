@@ -2,20 +2,19 @@
   z-index: 1;
   display: block;
   position: absolute;
-  border-width: 1px;
-  border-style: solid;
-  border-color: inherit;
+  background-color: currentColor;
+  height: 2px;
   width: 16px;
 }
 
 .header__nav-btn-active-line:nth-child(1) {
   top: 8px;
   left: 4px;
-  transform-origin: 5px 1px;
+  transform-origin: 4px 1px;
 }
 
 .header__nav-btn-active-line:nth-child(2) {
   top: 14px;
   left: 4px;
-  transform-origin: 5px 1px;
+  transform-origin: 4px 1px;
 }
