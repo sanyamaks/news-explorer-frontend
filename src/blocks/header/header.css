@@ -19,7 +19,7 @@
   height: 80px;
   width: 100%;
   padding: 0 7.2%;
-  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   box-sizing: border-box;
 }
@@ -35,6 +35,8 @@
 @media screen and (max-width: 650px) {
   .header {
     position: relative;
+    border: none;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0 5%;
     z-index: 2;
   }
