@@ -1,0 +1,10 @@
+.form__signin-signup {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 500;
+  color: #2F71E5;
+  cursor: pointer;
+}

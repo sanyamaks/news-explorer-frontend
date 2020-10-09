@@ -1,0 +1,13 @@
+@import url(./__title/form__title.css);
+@import url(./__input-wrapper/form__input-wrapper.css);
+@import url(./__prompt/form__prompt.css);
+@import url(./__prompt/_disable/form__prompt_disable.css);
+@import url(./__button/form__button.css);
+@import url(./__toggle/form__toggle.css);
+@import url(./__signin-signup/form__signin-signup.css);
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

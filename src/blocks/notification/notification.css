@@ -1,0 +1,8 @@
+@import url(./__title/notification__title.css);
+@import url(./__signin/notification__signin.css);
+
+.notification {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
