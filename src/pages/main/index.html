@@ -28,7 +28,9 @@
             >
           </li>
           <li class="header__nav-item">
-            <a class="header__link" href="./articles.html">Сохраненные статьи</a>
+            <a class="header__link" href="./articles.html"
+            >Сохраненные статьи</a
+            >
           </li>
         </ul>
       </nav>
@@ -62,7 +64,7 @@
       <h2 class="results__title">Результаты поиска</h2>
       <div class="articles results__articles">
         <article class="article articles__article">
-            <div class="article__icon article__icon_save-icon"></div>
+          <div class="article__icon article__icon_save-icon"></div>
           <p
             class="article__tooltip article__tooltip_save article__tooltip_active"
           >
@@ -71,7 +73,9 @@
           <div
             class="article__background"
             style="
-                  background-image: url(<%=require('../../images/test/image_08.png')%>);
+                  background-image: url(<%=require(
+                      '../../images/test/image_08.png'
+                    )%>);
                 "
           ></div>
           <div class="article__info">
@@ -99,7 +103,9 @@
           <div
             class="article__background"
             style="
-                  background-image: url(<%=require('../../images/test/image_04.png')%>);
+                  background-image: url(<%=require(
+                      '../../images/test/image_04.png'
+                    )%>);
                 "
           ></div>
           <div class="article__info">
@@ -126,7 +132,9 @@
           <div
             class="article__background"
             style="
-                  background-image: url(<%=require('../../images/test/image_07.png')%>);
+                  background-image: url(<%=require(
+                      '../../images/test/image_07.png'
+                    )%>);
                 "
           ></div>
           <div class="article__info">
@@ -210,12 +218,21 @@
           <a class="footer__nav-link" href="./index.html">Главная</a>
         </li>
         <li class="footer__nav-item">
-          <a class="footer__nav-link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+          <a
+            class="footer__nav-link"
+            href="https://praktikum.yandex.ru/"
+            target="_blank"
+          >Яндекс.Практикум</a
+          >
         </li>
       </ul>
       <ul class="footer__socials">
         <li class="footer__socials-item">
-          <a class="footer__socials-link" href="https://github.com/sanyamaks" target="_blank">
+          <a
+            class="footer__socials-link"
+            href="https://github.com/sanyamaks"
+            target="_blank"
+          >
             <img
               class="footer__socials-image"
               src="<%=require('../../images/github_icon.svg')%>"
@@ -224,7 +241,11 @@
           </a>
         </li>
         <li class="footer__socials-item">
-          <a class="footer__socials-link" href="https://www.facebook.com/" target="_blank">
+          <a
+            class="footer__socials-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
             <img
               class="footer__socials-image"
               src="<%=require('../../images/facebook_icon.svg')%>"
@@ -235,6 +256,143 @@
       </ul>
     </div>
   </footer>
+</div>
+
+<!--Попап для входа-->
+<div class="popup popup_signin popup_disabled">
+  <div class="popup__content">
+    <button class="popup__button-close" type="button">
+      <img
+        class="popup__icon-close"
+        src="<%=require('../../images/icon-close-popup.svg')%>"
+        alt="Иконка для закрытия окна"
+      />
+    </button>
+    <form class="form">
+      <h3 class="form__title">Вход</h3>
+
+      <div class="input-wrapper form__input-wrapper">
+        <p class="input-wrapper__title">Email</p>
+        <input
+          class="input input-wrapper__input"
+          type="email"
+          name="email"
+          pattern="([a-z\d]+([_-][a-z\d]+)*)@([a-z\d]+(-[a-z\d]+)*\.)+([a-z][a-z]+)"
+          placeholder="Введите почту"
+          minlength="2"
+          maxlength="30"
+          required
+        />
+        <p class="input-wrapper__prompt">Неправильный формат email</p>
+      </div>
+
+      <div class="input-wrapper form__input-wrapper">
+        <p class="input-wrapper__title">Пароль</p>
+        <input
+          class="input input-wrapper__input"
+          type="password"
+          name="password"
+          placeholder="Введите пароль"
+          minlength="8"
+          required
+        />
+        <p class="input-wrapper__prompt">Неправильный формат пароля</p>
+      </div>
+      <button class="button button_disabled form__button">
+        Войти
+      </button>
+      <p class="form__toggle">
+        или
+        <button class="form__signin-signup" type="button">
+          Зарегистироваться
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="popup popup_signup popup_disabled">
+  <div class="popup__content">
+    <button class="popup__button-close" type="button">
+      <img
+        class="popup__icon-close"
+        src="<%=require('../../images/icon-close-popup.svg')%>"
+        alt="Иконка для закрытия окна"
+      />
+    </button>
+    <form class="form">
+      <h3 class="form__title">Регистрация</h3>
+
+      <div class="input-wrapper form__input-wrapper">
+        <p class="input-wrapper__title">Email</p>
+        <input
+          class="input input-wrapper__input"
+          type="email"
+          name="email"
+          pattern="([a-z\d]+([_-][a-z\d]+)*)@([a-z\d]+(-[a-z\d]+)*\.)+([a-z][a-z]+)"
+          placeholder="Введите почту"
+          minlength="2"
+          maxlength="30"
+          required
+        />
+        <p class="input-wrapper__prompt">Неправильный формат email</p>
+      </div>
+
+      <div class="input-wrapper form__input-wrapper">
+        <p class="input-wrapper__title">Пароль</p>
+        <input
+          class="input input-wrapper__input"
+          type="password"
+          name="password"
+          placeholder="Введите пароль"
+          minlength="8"
+          required
+        />
+        <p class="input-wrapper__prompt input-wrapper__prompt_disabled">
+          Неправильный формат пароля
+        </p>
+      </div>
+
+      <div class="input-wrapper form__input-wrapper">
+        <p class="input-wrapper__title">Имя</p>
+        <input
+          class="input input-wrapper__input"
+          placeholder="Введите своё имя"
+          minlength="2"
+          maxlength="30"
+          required
+        />
+        <p class="input-wrapper__prompt">Неправильный формат имени</p>
+      </div>
+
+      <p class="form__prompt">Такой пользователь уже есть</p>
+      <button class="button button_disabled form__button">
+        Зарегистрироваться
+      </button>
+      <p class="form__toggle">
+        или
+        <button class="form__signin-signup" type="button">Войти</button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="popup popup_disabled popup_success">
+  <div class="popup__content popup__content_success">
+    <button class="popup__button-close" type="button">
+      <img
+        class="popup__icon-close"
+        src="<%=require('../../images/icon-close-popup.svg')%>"
+        alt="Иконка для закрытия окна"
+      />
+    </button>
+    <div class="notification">
+      <h3 class="notification__title">
+        Пользователь успешно зарегистрирован
+      </h3>
+      <button class="notification__signin" type="button">Войти</button>
+    </div>
+  </div>
 </div>
 <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
