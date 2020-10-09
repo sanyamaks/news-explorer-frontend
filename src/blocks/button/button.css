@@ -1,4 +1,7 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 48px;
   padding: 0 12px;
   font-family: 'Roboto', sans-serif;
@@ -13,6 +16,23 @@
   color: inherit;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+}
+
+.button__logout {
+  margin: 0 0 0 6px;
+  background-image: url('../../images/Union_black.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}
+
+.button__logout_disabled {
+  display: none;
+}
+
+.button__logout_white {
+  background-image: url('../../images/Union_white.svg');
 }
 
 @media screen and (max-width: 768px) {
