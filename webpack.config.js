@@ -76,7 +76,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       // Излекает css в отдельный файлы
-      filename: './css/[name].[contenthash].css',
+      filename: '[name].[contenthash].css',
     }),
     new OptimizeCssAssetsWebpackPlugin({
       assetNameRegExp: /\.css$/g,
