@@ -3,9 +3,11 @@
   color: #FFF;
   background-color: #2F71E5;
   border: none;
+  transition: background-color .1s ease;
 }
 
 .button_blue:hover {
+  opacity: 1;
   background-color: #347EFF;
 }
 

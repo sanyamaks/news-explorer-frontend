@@ -5,3 +5,7 @@
   border: none;
   cursor: auto;
 }
+
+.button_disabled:hover {
+  opacity: 1;
+}

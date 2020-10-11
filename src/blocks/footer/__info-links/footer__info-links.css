@@ -1,0 +1,15 @@
+.footer__info-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__info-links {
+    order: 1;
+    justify-content: space-between;
+    align-items: start;
+    height: auto;
+    width: 100%;
+  }
+}

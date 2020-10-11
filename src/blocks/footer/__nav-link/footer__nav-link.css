@@ -1,0 +1,15 @@
+.footer__nav-link {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #1A1B22;
+  text-decoration: none;
+  outline: none;
+  transition: opacity .1s ease;
+}
+
+.footer__nav-link:hover {
+  opacity: .7;
+}

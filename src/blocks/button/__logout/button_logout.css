@@ -1,0 +1,8 @@
+.button__logout {
+  margin: 0 0 0 6px;
+  background-image: url('../../../images/Union_black.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}

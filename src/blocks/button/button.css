@@ -1,3 +1,7 @@
+@import url(./__logout/button_logout.css);
+@import url(./__logout/_disabled/button__logout_disabled.css);
+@import url(./__logout/_white/button__logout_white.css);
+
 .button {
   display: flex;
   align-items: center;
@@ -16,23 +20,11 @@
   color: inherit;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  transition: opacity .1s ease;
 }
 
-.button__logout {
-  margin: 0 0 0 6px;
-  background-image: url('../../images/Union_black.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 24px;
-  width: 24px;
-}
-
-.button__logout_disabled {
-  display: none;
-}
-
-.button__logout_white {
-  background-image: url('../../images/Union_white.svg');
+.button:hover {
+  opacity: .7;
 }
 
 @media screen and (max-width: 768px) {

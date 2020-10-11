@@ -9,6 +9,11 @@
   font-size: 1.125rem;
   line-height: 1.5rem;
   text-decoration: none;
+  transition: opacity .1s ease;
+}
+
+.header__link:hover {
+ opacity: .7;
 }
 
 

@@ -1,0 +1,6 @@
+.footer__socials-item {
+}
+
+.footer__socials-item:not(:first-child) {
+  margin: 0 0 0 26px;
+}
