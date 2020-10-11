@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
+    filename: './js/[name].[chunkhash].js',
   },
   module: {
     rules: [
@@ -76,7 +76,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       // Излекает css в отдельный файлы
-      filename: '[name].[contenthash].css',
+      filename: './css/[name].[contenthash].css',
     }),
     new OptimizeCssAssetsWebpackPlugin({
       assetNameRegExp: /\.css$/g,
