@@ -19,6 +19,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: { loader: 'babel-loader' }, // весь JS обрабатывается пакетом babel-loader
+        exclude: /node_modules/,
+      },
+      {
         test: /\.css$/,
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader, //style-loader
@@ -79,7 +84,7 @@ module.exports = {
       cssProcessorPluginOptions: {
         preset: ['default'],
       },
-      canPrint: true
+      canPrint: true,
     }),
     new CleanWebpackPlugin(),
     new WebpackMd5Hash(),

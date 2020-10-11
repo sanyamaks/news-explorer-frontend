@@ -19,7 +19,11 @@
   },
   "homepage": "https://sanyamaks.github.io/news-explorer-frontend/",
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "autoprefixer": "^10.0.1",
+    "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.2",
     "css-loader": "^4.3.0",
@@ -39,5 +43,8 @@
     "webpack-dev-server": "^3.11.0",
     "webpack-md5-hash": "0.0.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.4.1"
+  }
 }
