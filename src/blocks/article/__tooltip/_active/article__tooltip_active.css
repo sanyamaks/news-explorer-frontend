@@ -1,1 +1,16 @@
+.article__tooltip_active {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__tooltip_active {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .article__tooltip_active {
+    display: none;
+  }
+}
 

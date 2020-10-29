@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 40px 7.2% 56px 7.2%;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .common-info__title {
@@ -21,19 +21,16 @@
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 2.875rem;
-  color: #1A1B22;
+  color: #1a1b22;
 }
 
 .common-info__name {
-
 }
 
 .common-info__number-articles {
-
 }
 
 .common-info__changing-case {
-
 }
 
 .common-info__keywords {
@@ -42,10 +39,14 @@
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: #1A1B22;
+  color: #1a1b22;
 }
 
-.common-info_enumeration-keywords {
+.common-info__keywords_disabled {
+  display: none;
+}
+
+.common-info__enumeration-keywords {
   font-weight: 700;
 }
 

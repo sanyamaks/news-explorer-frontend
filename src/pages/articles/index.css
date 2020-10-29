@@ -10,6 +10,7 @@
 @import url(../../blocks/main/main.css);
 @import url(../../blocks/common-info/common-info.css);
 @import url(../../blocks/saved-articles/saved-articles.css);
+@import url(../../blocks/saved-articles/_disabled/saved-articles_disabled.css);
 @import url(../../blocks/article/article.css);
 @import url(../../blocks/articles/articles.css);
 @import url(../../blocks/footer/footer.css);

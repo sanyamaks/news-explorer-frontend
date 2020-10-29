@@ -1,4 +1,5 @@
 .article__description {
+  max-height: 115px;
   flex: 1 1 auto;
   margin: 16px 0 0 0;
   font-family: 'Roboto', sans-serif;
@@ -17,4 +18,3 @@
     -webkit-line-clamp: 4;
   }
 }
-
