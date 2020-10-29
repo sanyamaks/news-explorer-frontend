@@ -31,7 +31,7 @@ class MainAPI {
       });
   }
 
-  saveNews = (newsItem) => {
+  saveArticle = (newsItem) => {
     return fetch(this.options.baseUrl + '/articles', {
       method: 'POST',
       headers: { ...this.options.headers, authorization: this.authorization },
@@ -41,7 +41,7 @@ class MainAPI {
       .then((res) => res.data);
   };
 
-  removeNews = (articleId) => {
+  removeArticle = (articleId) => {
     return fetch(this.options.baseUrl + '/articles' + '/' + articleId, {
       method: 'DELETE',
       headers: { ...this.options.headers, authorization: this.authorization },

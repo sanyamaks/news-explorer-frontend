@@ -57,7 +57,7 @@ const addArticleHandler = async (article) => {
     return null;
   }
   return await mainAPI
-    .saveNews(article.getArticleInfo())
+    .saveArticle(article.getArticleInfo())
     .then((savedArticle) => {
       article.setArticleId(savedArticle._id);
       return true;
@@ -73,7 +73,7 @@ const deleteArticleHandler = async (id) => {
     return null;
   }
   return await mainAPI
-    .removeNews(id)
+    .removeArticle(id)
     .then(() => {
       return true;
     })

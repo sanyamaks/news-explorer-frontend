@@ -46,7 +46,7 @@ const hoverIconArticleHandler = (event, article) => {
 
 const deleteArticleHandler = async (id) =>
   await mainAPI
-    .removeNews(id)
+    .removeArticle(id)
     .then(() => {
       const positionDeletedArticle = articlesObj
         .getNews()
