@@ -41,4 +41,5 @@ HTML5, CSS3, JS(ES6), Webpack, Babel
 
 ## Ссылка на github pages:
 https://sanyamaks.github.io/news-explorer-frontend/
+
 https://aleksmaksimovnews.tk/
