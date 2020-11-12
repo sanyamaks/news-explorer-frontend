@@ -1,5 +1,7 @@
 # Дипломная работа News Explorer (Яндекс.Практикум)
 
+https://aleksmaksimovnews.tk/
+
 ## О проекте:
 Cервис, в котором можно найти новости по запросу и сохранить в личном кабинете.
 Сайт состоит из двух страниц:
@@ -41,5 +43,3 @@ HTML5, CSS3, JS(ES6), Webpack, Babel
 
 ## Ссылка на github pages:
 https://sanyamaks.github.io/news-explorer-frontend/
-
-https://aleksmaksimovnews.tk/
