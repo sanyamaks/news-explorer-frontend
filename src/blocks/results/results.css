@@ -1,6 +1,10 @@
 @import url(./__title/results__title.css);
+@import url(./__subtitle/results__subtitle.css);
+@import url(./__subtitle/_disabled/results__subtitle_disabled.css);
 @import url(./__articles/results__articles.css);
+@import url(./__articles/_disabled/results__articles_disabled.css);
 @import url(./__button/results__button.css);
+@import url(./__button/_disabled/results__button_disabled.css);
 
 .results {
   display: flex;

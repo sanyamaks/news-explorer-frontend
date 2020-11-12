@@ -1,0 +1,7 @@
+.search__input-prompt {
+  margin: 0;
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  color: #ffc1b2;
+}

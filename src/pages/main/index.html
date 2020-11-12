@@ -6,7 +6,11 @@
     name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   />
-  <link rel="shortcut icon" href="<%=require('../../images/favicon.ico')%>" type="image/x-icon">
+  <link
+    rel="shortcut icon"
+    href="<%=require('../../images/favicon.ico')%>"
+    type="image/x-icon"
+  />
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>"/>
   <title>News Explorer</title>
 </head>
@@ -28,7 +32,9 @@
             >Главная</a
             >
           </li>
-          <li class="header__nav-item">
+          <li
+            class="header__nav-item header__nav-item_saved-articles header__nav-item_disabled"
+          >
             <a class="header__link" href="./articles.html"
             >Сохраненные статьи</a
             >
@@ -37,8 +43,10 @@
       </nav>
 
       <button class="button header__button" type="button">
-        Регистрация
-        <span class="button__logout button__logout_white button__logout_disabled"></span>
+        <span class="button__text">Регистрация</span>
+        <span
+          class="button__icon-logout button__icon-logout_white button__icon-logout_disabled"
+        ></span>
       </button>
     </div>
   </header>
@@ -50,117 +58,36 @@
         Находите самые свежие статьи на любую тему и сохраняйте в своём
         личном кабинете.
       </p>
-      <form class="search__form">
+      <form class="search__form" novalidate>
         <input
           class="search__input"
           type="text"
+          name="key"
           placeholder="Введите тему новости"
+          required
         />
+        <p class="search__input-prompt search__input-prompt_disabled">
+          Это обязательное поле
+        </p>
         <button class="button button_blue search__button" type="button">
-          Искать
+          <span class="button__text">Искать</span>
         </button>
       </form>
     </section>
 
-    <section class="results">
+    <section class="results results_disabled">
       <h2 class="results__title">Результаты поиска</h2>
-      <div class="articles results__articles">
-        <article class="article articles__article">
-          <div class="article__icon article__icon_save-icon"></div>
-          <p
-            class="article__tooltip article__tooltip_save article__tooltip_active"
-          >
-            Войдите, чтобы сохранять статьи
-          </p>
-          <div
-            class="article__background"
-            style="
-                  background-image: url(<%=require(
-                      '../../images/test/image_08.png'
-                    )%>);
-                "
-          ></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">Национальное достояние – парки</h3>
-            <p class="article__description">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад
-              здесь начала складываться система национальных парков –
-              охраняемых территорий, где и сегодня каждый может приобщиться
-              к природе.
-            </p>
-            <p class="article__source">Лента.ру</p>
-          </div>
-        </article>
-
-        <article class="article articles__article">
-          <div
-            class="article__icon article__icon_save-icon article__icon_save-icon_active"
-          ></div>
-          <p
-            class="article__tooltip article__tooltip_save article__tooltip_active"
-          >
-            Войдите, чтобы сохранять статьи
-          </p>
-          <div
-            class="article__background"
-            style="
-                  background-image: url(<%=require(
-                      '../../images/test/image_04.png'
-                    )%>);
-                "
-          ></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">
-              Лесные огоньки: история одной фотографии
-            </h3>
-            <p class="article__description">
-              Фотограф отвлеклась от освещения суровой политической
-              реальности Мексики, чтобы запечатлеть ускользающую красоту
-              одного из местных чудес природы.
-            </p>
-            <p class="article__source">Медуза</p>
-          </div>
-        </article>
-
-        <article class="article articles__article">
-          <div class="article__icon article__icon_save-icon"></div>
-          <p
-            class="article__tooltip article__tooltip_save article__tooltip_active"
-          >
-            Войдите, чтобы сохранять статьи
-          </p>
-          <div
-            class="article__background"
-            style="
-                  background-image: url(<%=require(
-                      '../../images/test/image_07.png'
-                    )%>);
-                "
-          ></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">
-              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-            </h3>
-            <p class="article__description">
-              Знаменитый фотограф снимает первозданные леса России, чтобы
-              рассказать о необходимости их сохранения. В этот раз он
-              отправился в Двинско-Пинежскую тайгу, где текста будет
-              написано гораздо больше, чтобы протестировать работу
-              ограничения строк
-            </p>
-            <p class="article__source">Риа</p>
-          </div>
-        </article>
-      </div>
+      <p class="results__subtitle results__subtitle_disabled">
+        Во время запроса произошла ошибка. Возможно, проблема с соединением
+        или сервер недоступен. Подождите немного и попробуйте ещё раз
+      </p>
+      <div class="articles results__articles"></div>
       <button class="button button_white results__button">
-        Показать ещё
+        <span class="button__text">Показать ещё</span>
       </button>
     </section>
 
-    <section class="no-results">
+    <section class="no-results no-results_disabled">
       <img
         class="no-results__icon-not-found"
         src="<%=require('../../images/icon-not-found.svg')%>"
@@ -172,7 +99,7 @@
       </p>
     </section>
 
-    <section class="loader">
+    <section class="loader loader_disabled">
       <i class="loader__preloader"></i>
       <h2 class="loader__text">Идёт поиск новостей...</h2>
     </section>
@@ -238,7 +165,7 @@
             <img
               class="footer__socials-image"
               src="<%=require('../../images/github_icon.svg')%>"
-              alt="Икона Github"
+              alt="Иконка Github"
             />
           </a>
         </li>
@@ -251,7 +178,7 @@
             <img
               class="footer__socials-image"
               src="<%=require('../../images/facebook_icon.svg')%>"
-              alt="Икона Facebook"
+              alt="Иконка Facebook"
             />
           </a>
         </li>
@@ -260,8 +187,7 @@
   </footer>
 </div>
 
-<!--Попап для входа-->
-<div class="popup popup_signin popup_disabled">
+<div class="popup popup_disabled">
   <div class="popup__content">
     <button class="popup__button-close" type="button">
       <img
@@ -270,7 +196,7 @@
         alt="Иконка для закрытия окна"
       />
     </button>
-    <form class="form">
+    <form class="form form_signin form_disabled" novalidate>
       <h3 class="form__title">Вход</h3>
 
       <div class="input-wrapper form__input-wrapper">
@@ -279,13 +205,14 @@
           class="input input-wrapper__input"
           type="email"
           name="email"
-          pattern="([a-z\d]+([_-][a-z\d]+)*)@([a-z\d]+(-[a-z\d]+)*\.)+([a-z][a-z]+)"
           placeholder="Введите почту"
           minlength="2"
           maxlength="30"
           required
         />
-        <p class="input-wrapper__prompt">Неправильный формат email</p>
+        <p class="input-wrapper__prompt input-wrapper__prompt_disabled">
+          Неправильный формат email
+        </p>
       </div>
 
       <div class="input-wrapper form__input-wrapper">
@@ -298,10 +225,13 @@
           minlength="8"
           required
         />
-        <p class="input-wrapper__prompt">Неправильный формат пароля</p>
+        <p class="input-wrapper__prompt input-wrapper__prompt_disabled">
+          Неправильный формат пароля
+        </p>
       </div>
+      <p class="form__prompt form__prompt_disable"></p>
       <button class="button button_disabled form__button">
-        Войти
+        <span class="button__text">Войти</span>
       </button>
       <p class="form__toggle">
         или
@@ -310,19 +240,8 @@
         </button>
       </p>
     </form>
-  </div>
-</div>
 
-<div class="popup popup_signup popup_disabled">
-  <div class="popup__content">
-    <button class="popup__button-close" type="button">
-      <img
-        class="popup__icon-close"
-        src="<%=require('../../images/icon-close-popup.svg')%>"
-        alt="Иконка для закрытия окна"
-      />
-    </button>
-    <form class="form">
+    <form class="form form_signup form_disabled" novalidate>
       <h3 class="form__title">Регистрация</h3>
 
       <div class="input-wrapper form__input-wrapper">
@@ -331,13 +250,14 @@
           class="input input-wrapper__input"
           type="email"
           name="email"
-          pattern="([a-z\d]+([_-][a-z\d]+)*)@([a-z\d]+(-[a-z\d]+)*\.)+([a-z][a-z]+)"
           placeholder="Введите почту"
           minlength="2"
           maxlength="30"
           required
         />
-        <p class="input-wrapper__prompt">Неправильный формат email</p>
+        <p class="input-wrapper__prompt input-wrapper__prompt_disabled">
+          Неправильный формат email
+        </p>
       </div>
 
       <div class="input-wrapper form__input-wrapper">
@@ -359,40 +279,33 @@
         <p class="input-wrapper__title">Имя</p>
         <input
           class="input input-wrapper__input"
+          type="text"
+          name="name"
           placeholder="Введите своё имя"
           minlength="2"
           maxlength="30"
           required
         />
-        <p class="input-wrapper__prompt">Неправильный формат имени</p>
+        <p class="input-wrapper__prompt input-wrapper__prompt_disabled">
+          Неправильный формат имени
+        </p>
       </div>
 
-      <p class="form__prompt">Такой пользователь уже есть</p>
+      <p class="form__prompt form__prompt_disable"></p>
       <button class="button button_disabled form__button">
-        Зарегистрироваться
+        <span class="button__text">Зарегистрироваться</span>
       </button>
       <p class="form__toggle">
         или
         <button class="form__signin-signup" type="button">Войти</button>
       </p>
     </form>
-  </div>
-</div>
 
-<div class="popup popup_disabled popup_success">
-  <div class="popup__content popup__content_success">
-    <button class="popup__button-close" type="button">
-      <img
-        class="popup__icon-close"
-        src="<%=require('../../images/icon-close-popup.svg')%>"
-        alt="Иконка для закрытия окна"
-      />
-    </button>
-    <div class="notification">
+    <div class="notification notification_disabled">
       <h3 class="notification__title">
         Пользователь успешно зарегистрирован
       </h3>
-      <button class="notification__signin" type="button">Войти</button>
+      <button class="notification__toggle" type="button">Войти</button>
     </div>
   </div>
 </div>

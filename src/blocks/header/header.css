@@ -8,6 +8,7 @@
 @import url(__nav/header__nav.css);
 @import url(__nav-list/header__nav-list.css);
 @import url(__nav-item/header__nav-item.css);
+@import url(__nav-item/_disabled/header__nav-item_disabled.css);
 @import url(__link/header__link.css);
 @import url(__link/_checked/header__link_checked.css);
 @import url(__button/header__button.css);

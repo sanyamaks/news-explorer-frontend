@@ -1,6 +1,6 @@
-@import url(./__logout/button_logout.css);
-@import url(./__logout/_disabled/button__logout_disabled.css);
-@import url(./__logout/_white/button__logout_white.css);
+@import url(__icon-logout/button_icon-logout.css);
+@import url(__icon-logout/_disabled/button__icon-logout_disabled.css);
+@import url(__icon-logout/_white/button__icon-logout_white.css);
 
 .button {
   display: flex;

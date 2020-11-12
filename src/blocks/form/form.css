@@ -11,3 +11,7 @@
   flex-direction: column;
   width: 100%;
 }
+
+.form_disabled {
+  display: none;
+}

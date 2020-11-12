@@ -26,7 +26,9 @@
           <li class="header__nav-item">
             <a class="header__link" href="./index.html">Главная</a>
           </li>
-          <li class="header__nav-item">
+          <li
+            class="header__nav-item header__nav-item_saved-articles header__nav-item_disabled"
+          >
             <a
               class="header__link header__link_checked"
               href="./articles.html"
@@ -37,8 +39,10 @@
       </nav>
 
       <button class="button header__button" type="button">
-        Грета
-        <span class="button__logout"></span>
+        <span class="button__text">Регистрация</span>
+        <span
+          class="button__icon-logout button__icon-logout_disabled"
+        ></span>
       </button>
     </div>
   </header>
@@ -52,163 +56,16 @@
         <span class="common-info__number-articles">5</span> сохранённых
         <span class="common-info__changing-case">статей</span>
       </p>
-      <p class="common-info__keywords">
+      <p class="common-info__keywords common-info__keywords_disabled">
         По ключевым словам:
-        <span class="common-info_enumeration-keywords">
+        <span class="common-info__enumeration-keywords">
           Природа, Тайга и 2-м другим
         </span>
       </p>
     </section>
 
-    <section class="saved-articles">
-      <div class="articles results__articles">
-        <article class="article articles__article">
-          <p class="article__category">Природа</p>
-          <div class="article__icon article__icon_delete-icon"></div>
-          <p
-            class="article__tooltip article__tooltip_delete article__tooltip_active"
-          >
-            Убрать из сохранённых
-          </p>
-          <div
-            class="article__background"
-            style="background-image: url(<%=require('../../images/test/image_08.png')%>);"></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">Национальное достояние – парки</h3>
-            <p class="article__description">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад
-              здесь начала складываться система национальных парков –
-              охраняемых территорий, где и сегодня каждый может приобщиться
-              к природе.
-            </p>
-            <p class="article__source">Лента.ру</p>
-          </div>
-        </article>
-
-        <article class="article articles__article">
-          <p class="article__category">Тайга</p>
-          <div class="article__icon article__icon_delete-icon"></div>
-          <p
-            class="article__tooltip article__tooltip_delete article__tooltip_active"
-          >
-            Убрать из сохранённых
-          </p>
-          <div
-            class="article__background"
-            style="
-                  background-image: url(<%=require(
-                      '../../images/test/image_04.png'
-                    )%>);
-                "
-          ></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">
-              Лесные огоньки: история одной фотографии
-            </h3>
-            <p class="article__description">
-              Фотограф отвлеклась от освещения суровой политической
-              реальности Мексики, чтобы запечатлеть ускользающую красоту
-              одного из местных чудес природы.
-            </p>
-            <p class="article__source">Дзен</p>
-          </div>
-        </article>
-
-        <article class="article articles__article">
-          <p class="article__category">Фотография</p>
-          <div class="article__icon article__icon_delete-icon"></div>
-          <p
-            class="article__tooltip article__tooltip_delete article__tooltip_active"
-          >
-            Убрать из сохранённых
-          </p>
-          <div
-            class="article__background"
-            style="
-                  background-image: url(<%=require(
-                      '../../images/test/image_07.png'
-                    )%>);
-                "
-          ></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">
-              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-            </h3>
-            <p class="article__description">
-              Знаменитый фотограф снимает первозданные леса России, чтобы
-              рассказать о необходимости их сохранения. В этот раз он
-              отправился в Двинско-Пинежскую тайгу, где текста будет
-              написано гораздо больше, чтобы протестировать работу
-              ограничения строк
-            </p>
-            <p class="article__source">Афиша</p>
-          </div>
-        </article>
-
-        <article class="article articles__article">
-          <p class="article__category">Тайга</p>
-          <div class="article__icon article__icon_delete-icon"></div>
-          <p
-            class="article__tooltip article__tooltip_delete article__tooltip_active"
-          >
-            Убрать из сохранённых
-          </p>
-          <div
-            class="article__background"
-            style="
-                  background-image: url(<%=require(
-                      '../../images/test/image_04.png'
-                    )%>);
-                "
-          ></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">
-              Лесные огоньки: история одной фотографии
-            </h3>
-            <p class="article__description">
-              Фотограф отвлеклась от освещения суровой политической
-              реальности Мексики, чтобы запечатлеть ускользающую красоту
-              одного из местных чудес природы.
-            </p>
-            <p class="article__source">Дзен</p>
-          </div>
-        </article>
-
-        <article class="article articles__article">
-          <p class="article__category">Фотография</p>
-          <div class="article__icon article__icon_delete-icon"></div>
-          <p
-            class="article__tooltip article__tooltip_delete article__tooltip_active"
-          >
-            Убрать из сохранённых
-          </p>
-          <div
-            class="article__background"
-            style="
-                  background-image: url(<%=require(
-                      '../../images/test/image_07.png'
-                    )%>);
-                "
-          ></div>
-          <div class="article__info">
-            <p class="article__date">2 августа, 2019</p>
-            <h3 class="article__title">
-              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-            </h3>
-            <p class="article__description">
-              Знаменитый фотограф снимает первозданные леса России, чтобы
-              рассказать о необходимости их сохранения. В этот раз он
-              отправился в Двинско-Пинежскую тайгу, где текста будет
-              написано гораздо больше, чтобы протестировать работу
-              ограничения строк
-            </p>
-            <p class="article__source">Афиша</p>
-          </div>
-        </article>
+    <section class="saved-articles saved-articles_disabled">
+      <div class="articles saved-articles__articles articles">
       </div>
     </section>
   </main>

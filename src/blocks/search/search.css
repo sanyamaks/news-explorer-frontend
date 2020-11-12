@@ -3,6 +3,8 @@
 @import url(./__form/search__form.css);
 @import url(./__input/search__input.css);
 @import url(./__button/search__button.css);
+@import url(./__input-prompt/search__input-prompt.css);
+@import url(./__input-prompt/_disabled/search__input-prompt_disabled.css);
 
 .search {
   display: flex;
