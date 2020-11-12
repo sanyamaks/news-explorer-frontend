@@ -1,0 +1,7 @@
+.form__input-wrapper {
+  margin: 22px 0 0 0;
+}
+
+.form__input-wrapper:not(:first-child) {
+  margin: 13px 0 0 0;
+}

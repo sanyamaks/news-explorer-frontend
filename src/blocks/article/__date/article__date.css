@@ -1,0 +1,9 @@
+.article__date {
+  flex: 0 0 auto;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #B6BCBF;
+}

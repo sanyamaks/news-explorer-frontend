@@ -1,0 +1,37 @@
+@import url(./__avatar/about-author__avatar.css);
+@import url(./__info/about-author__info.css);
+@import url(./__title/about-author__title.css);
+@import url(./__description/about-author__description.css);
+@import url(./__description-text/about-author__description-text.css);
+
+.about-author {
+  display: flex;
+  align-items: center;
+  padding: 80px 7.2%;
+}
+
+@media screen and (max-width: 1280px) {
+  .about-author {
+    padding: 65px 6.4%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-author {
+    padding: 50px 5.7%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-author {
+    padding: 40px 5.2%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about-author {
+    flex-direction: column;
+    padding: 32px 5% 66px 5%;
+  }
+}

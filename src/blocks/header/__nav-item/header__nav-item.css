@@ -1,0 +1,12 @@
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav-item {
+    height: 56px;
+    width: 100%;
+  }
+}

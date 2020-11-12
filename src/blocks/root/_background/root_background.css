@@ -1,0 +1,23 @@
+.root_background {
+  min-height: 576px;
+  background-image: url('../../../images/background_image.png');
+  background-size: auto 576px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .root_background {
+    min-height: 400px;
+    background-size: auto 400px;
+    background-image: url('../../../images/background_image(768).png');
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .root_background {
+    min-height: 536px;
+    background-size: auto 536px;
+    background-image: url('../../../images/background_image(320).png');
+  }
+}

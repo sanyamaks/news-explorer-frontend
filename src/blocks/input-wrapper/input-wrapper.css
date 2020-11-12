@@ -1,0 +1,11 @@
+@import url(./__title/input-wrapper__title.css);
+@import url(./__input/input-wrapper__input.css);
+@import url(./__prompt/input-wrapper__prompt.css);
+@import url(./__prompt/_disabled/input-wrapper__prompt_disabled.css);
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 70px;
+  width: 100%;
+}

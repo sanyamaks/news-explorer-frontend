@@ -1,0 +1,11 @@
+.button_disabled {
+  height: 64px;
+  color: #B6BCBF;
+  background-color: #E6E8EB;
+  border: none;
+  cursor: auto;
+}
+
+.button_disabled:hover {
+  opacity: 1;
+}

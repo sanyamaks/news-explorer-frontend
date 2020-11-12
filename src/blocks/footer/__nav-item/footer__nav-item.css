@@ -1,0 +1,18 @@
+.footer__nav-item {
+}
+
+.footer__nav-item:not(:first-child) {
+  margin: 0 0 0 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__nav-item:not(:first-child) {
+    margin: 0 0 0 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__nav-item:not(:first-child) {
+    margin: 24px 0 0 0;
+  }
+}

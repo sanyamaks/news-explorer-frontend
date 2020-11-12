@@ -1,0 +1,22 @@
+.article__info {
+  display: flex;
+  flex-direction: column;
+  height: 304px;
+  width: 100%;
+  padding: 20px 24px 24px 24px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__info {
+    height: 270px;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .article__info {
+    height: 244px;
+  }
+
+}

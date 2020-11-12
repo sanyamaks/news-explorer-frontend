@@ -1,0 +1,12 @@
+.popup__icon-close {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 360px) {
+  .popup__icon-close {
+    height: 24px;
+    width: 24px;
+
+  }
+}

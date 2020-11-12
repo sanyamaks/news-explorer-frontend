@@ -1,0 +1,13 @@
+.form__prompt {
+  margin: 3px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FF0000;
+}
+
+.form__prompt + .form__button {
+  margin: 14px 0 0 0;
+}

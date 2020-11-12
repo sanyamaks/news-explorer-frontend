@@ -1,0 +1,38 @@
+.article__icon:hover + .article__tooltip_active {
+  display: flex;
+}
+
+.article__icon {
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  right: 24px;
+  height: 40px;
+  width: 40px;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__icon:hover + .article__tooltip_active {
+    display: none;
+  }
+
+  .article__icon {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .article__icon:hover + .article__tooltip_active {
+    display: none;
+  }
+
+  .article__icon {
+    top: 16px;
+    right: 16px;
+  }
+}

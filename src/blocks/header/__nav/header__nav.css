@@ -1,0 +1,9 @@
+.header__nav {
+
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.article__source {
+  flex: 0 0 auto;
+  margin: 18px 0 0 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__source {
+    margin: 12px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .article__source {
+    margin: 8px 0 0 0;
+  }
+}

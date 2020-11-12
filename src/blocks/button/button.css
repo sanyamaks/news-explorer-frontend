@@ -1,0 +1,42 @@
+@import url(./__logout/button_logout.css);
+@import url(./__logout/_disabled/button__logout_disabled.css);
+@import url(./__logout/_white/button__logout_white.css);
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  border-radius: 100px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: inherit;
+  outline: none;
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: opacity .1s ease;
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .button {
+    height: 56px;
+    font-size: 1.125rem;
+  }
+}

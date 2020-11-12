@@ -1,0 +1,15 @@
+.results__articles {
+  margin: 64px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .results__articles {
+    margin: 32px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .results__articles {
+    margin: 24px 0 0 0;
+  }
+}

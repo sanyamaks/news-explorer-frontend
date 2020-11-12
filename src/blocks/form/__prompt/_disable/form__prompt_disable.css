@@ -1,0 +1,7 @@
+.form__prompt_disable {
+  display: none;
+}
+
+.form__prompt_disable + .form__button {
+  margin: 32px 0 0 0;
+}

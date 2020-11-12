@@ -1,0 +1,11 @@
+.about-author__description-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.about-author__description-text:not:first-child {
+  margin: 24px 0 0 0;
+}
+

@@ -1,0 +1,14 @@
+.header__nav-btn-active {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav-btn-active {
+    display: block;
+  }
+}
